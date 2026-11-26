@@ -28,14 +28,14 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(215,183,122,.09),transpar
 nav{position:sticky;top:0;z-index:20;background:rgba(9,10,12,.86);backdrop-filter:blur(18px);padding:0 18px;border:1px solid rgba(215,183,122,.12);border-top:0}
 .logo{font-size:18px}.navcta,.btn{transition:transform .25s,box-shadow .25s;background:linear-gradient(110deg,#c6a365,#f1d9a8);box-shadow:0 8px 28px rgba(215,183,122,.12)}.navcta:hover,.btn:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(215,183,122,.24)}
 .hero{padding:94px 0 62px}.hero h1{max-width:800px;text-wrap:balance}.hero p{font-size:17px;line-height:1.85}
-.hero-gallery{height:310px;display:grid;grid-template-columns:1.25fr .8fr .8fr;gap:12px;margin:46px 0 8px}
+.hero-gallery{height:310px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:46px 0 8px;align-items:stretch}
 .hero-shot{position:relative;overflow:hidden;border:1px solid rgba(215,183,122,.25);border-radius:5px;background:#171a20;min-width:0}
 .hero-shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s;filter:saturate(.82)}
 .hero-shot:hover img{transform:scale(1.06)}
 .hero-shot:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.8))}
 .hero-shot span{position:absolute;z-index:2;bottom:16px;left:17px;color:#f5f4f0;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
 .hero-shot span b{display:block;color:var(--gold2);font-size:17px;letter-spacing:0}
-.hero-shot.tall{transform:translateY(15px)}
+.hero-shot.tall{transform:none}
 .hero-foot{margin-top:44px}
 .section{padding:100px 0}
 .sectiontop{margin-bottom:42px}
@@ -53,8 +53,8 @@ nav{position:sticky;top:0;z-index:20;background:rgba(9,10,12,.86);backdrop-filte
 .step{transition:padding .25s}.step:hover{padding-left:10px}
 .aboutbox{position:relative;overflow:hidden}.aboutbox:after{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(215,183,122,.17);border-radius:50%;right:-65px;bottom:-100px;box-shadow:0 0 0 25px rgba(215,183,122,.025),0 0 0 50px rgba(215,183,122,.02)}
 .contact{box-shadow:0 24px 80px rgba(0,0,0,.22)}
-@media(max-width:800px){.hero-gallery{height:250px;grid-template-columns:1.2fr .8fr}.hero-shot.tall{display:none}.casevisual{min-height:230px}}
-@media(max-width:480px){.hero-gallery{height:195px;gap:7px;margin-top:32px}.hero-shot span{left:10px;bottom:10px;font-size:8px}.hero-shot span b{font-size:13px}.hero{padding-top:68px}.casebody{padding:19px}.casevisual{min-height:195px}}
+@media(max-width:800px){.hero-gallery{height:250px;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.casevisual{min-height:230px}}
+@media(max-width:480px){.hero-gallery{height:175px;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:32px}.hero-shot span{left:7px;bottom:8px;font-size:7px;letter-spacing:.08em}.hero-shot span b{font-size:10px}.hero{padding-top:68px}.casebody{padding:19px}.casevisual{min-height:195px}}
 
 
 /* STOCK IMAGE EDITORIAL GALLERY */
@@ -136,7 +136,7 @@ nav{position:sticky;top:0;z-index:20;background:rgba(9,10,12,.86);backdrop-filte
 </div>
 <div class="hero-gallery" aria-label="Selected client work">
  <div class="hero-shot"><img src="https://content.jdmagicbox.com/v2/comp/muzaffarpur/s5/9999px621.x621.250331060225.j4s5/catalogue/dentally-yours-muzaffarpur-dentists-mk18nzlqkl-250.jpg" alt="Dentally Yours clinic"><span>Healthcare<b>Dentally Yours</b></span></div>
- <div class="hero-shot tall"><span>Jewellery styling<b>Khushika Jewellery</b></span></div>
+ <div class="hero-shot"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=88" alt="Gold jewellery styling, illustrative stock image" loading="lazy"><span>Jewellery styling<b>Khushika Jewellery</b></span></div>
  <div class="hero-shot"><img src="https://image.wedmegood.com/resized/450X/uploads/member/1826719/1662621532_271418975_283040627138306_2454812120154979491_n.jpg?crop=4%2C207%2C1071%2C602" alt="Khushika Secrets bridal makeup"><span>Beauty & bridal<b>Khushika Secrets</b></span></div>
 </div>
 <div class="hero-foot"><div>What we do<b>Content · Ads · Growth</b></div><div>Who we help<b>Ambitious local brands</b></div><div>Based in<b>India · Working everywhere</b></div></div>
