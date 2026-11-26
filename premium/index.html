@@ -56,6 +56,21 @@ nav{position:sticky;top:0;z-index:20;background:rgba(9,10,12,.86);backdrop-filte
 @media(max-width:800px){.hero-gallery{height:250px;grid-template-columns:1.2fr .8fr}.hero-shot.tall{display:none}.casevisual{min-height:230px}}
 @media(max-width:480px){.hero-gallery{height:195px;gap:7px;margin-top:32px}.hero-shot span{left:10px;bottom:10px;font-size:8px}.hero-shot span b{font-size:13px}.hero{padding-top:68px}.casebody{padding:19px}.casevisual{min-height:195px}}
 
+
+/* STOCK IMAGE EDITORIAL GALLERY */
+.visual-gallery{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:220px 220px;gap:12px}
+.visual-tile{position:relative;overflow:hidden;border:1px solid rgba(215,183,122,.22);border-radius:4px;background:#171a20;isolation:isolate}
+.visual-tile:first-child{grid-row:span 2}
+.visual-tile img{width:100%;height:100%;display:block;object-fit:cover;filter:brightness(.78) saturate(.78);transition:transform .7s,filter .4s}
+.visual-tile:hover img{transform:scale(1.07);filter:brightness(.95) saturate(.95)}
+.visual-tile:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.88));z-index:0}
+.visual-tile .tile-copy{position:absolute;z-index:1;left:18px;right:14px;bottom:16px}
+.visual-tile small{display:block;color:var(--gold2);font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+.visual-tile b{font-size:17px;line-height:1.2}
+.visual-note{font-size:10px;color:#858992;margin-top:14px}
+@media(max-width:800px){.visual-gallery{grid-template-columns:1fr 1fr;grid-template-rows:200px 160px 160px}.visual-tile:first-child{grid-row:span 2}}
+@media(max-width:480px){.visual-gallery{gap:8px;grid-template-rows:170px 135px 135px}.visual-tile .tile-copy{left:11px;bottom:10px}.visual-tile b{font-size:13px}.visual-tile small{font-size:8px}}
+
 </style>
 </head>
 <body><div class="container">
@@ -80,7 +95,17 @@ nav{position:sticky;top:0;z-index:20;background:rgba(9,10,12,.86);backdrop-filte
 <div class="service"><span class="num">04 / LOCAL</span><h3>Google Business Profile</h3><p>Profile optimisation and local visibility support to help nearby customers discover you.</p></div>
 <div class="service"><span class="num">05 / SEARCH</span><h3>Google Ads</h3><p>Search campaign setup and optimisation focused on relevant calls, visits and enquiries.</p></div>
 <div class="service"><span class="num">06 / DIGITAL</span><h3>Web & Brand Presence</h3><p>Clear landing pages and cohesive digital touchpoints that build trust in your business.</p></div>
+
 </div></section>
+<section class="section" id="visuals"><div class="sectiontop"><div><div class="kicker">01A / Visual direction</div><h2 class="heading">Good brands are<br>built to be seen.</h2></div><p class="sub">A visual snapshot of the worlds we create for — healthcare, beauty, retail and modern businesses. These are illustrative stock photographs, not client project results.</p></div>
+<div class="visual-gallery">
+ <div class="visual-tile"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=85" alt="Creative team planning a marketing campaign" loading="lazy"><div class="tile-copy"><small>STRATEGY & COLLABORATION</small><b>Ideas with a clear direction.</b></div></div>
+ <div class="visual-tile"><img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=85" alt="Modern dental care environment" loading="lazy"><div class="tile-copy"><small>HEALTHCARE</small><b>Trust-led communication.</b></div></div>
+ <div class="visual-tile"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=85" alt="Beauty and makeup products" loading="lazy"><div class="tile-copy"><small>BEAUTY & LIFESTYLE</small><b>Content that catches the eye.</b></div></div>
+ <div class="visual-tile"><img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=800&q=85" alt="Consumer electronics and technology" loading="lazy"><div class="tile-copy"><small>RETAIL & TECHNOLOGY</small><b>Make products stand out.</b></div></div>
+ <div class="visual-tile"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=85" alt="Contemporary creative studio workspace" loading="lazy"><div class="tile-copy"><small>DIGITAL STUDIO</small><b>Thoughtful work, every day.</b></div></div>
+</div><p class="visual-note">Image credits: Unsplash contributors. Stock visuals are used for atmosphere and creative direction only; client work is shown separately below.</p>
+</section>
 <section class="section" id="work"><div class="sectiontop"><div><div class="kicker">02 / Selected projects</div><h2 class="heading">Work that speaks<br>for itself.</h2></div><p class="sub">A selection of client work across healthcare, beauty and retail. We show verified performance where data is available.</p></div>
 <div class="workgrid">
 <article class="case"><div class="casevisual"><img src="https://content.jdmagicbox.com/v2/comp/muzaffarpur/s5/9999px621.x621.250331060225.j4s5/catalogue/dentally-yours-muzaffarpur-dentists-mk18nzlqkl-250.jpg" alt="Dentally Yours dental clinic, Muzaffarpur" loading="lazy"><div class="visualword"><small>HEALTHCARE · MUZAFFARPUR</small>DENTALLY<br>YOURS.</div></div><div class="casebody"><div class="doctor-profile"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLeajlV_qm_jc4WRnB52wogOEBG7XmsWZqXVsPyv6Te8_b8wUcjf06joek83VcC36pj9MueEyPHJUrmZJh9ihD3JyKIKudAyngJFkKfB6eJ6aU6ElggzrqUp2bUDVupYD3PxdV_nIaT_KYPM=s220-w165-h220-n-k-no" alt="Dr. Disha Chaudhary, lead dentist at Dentally Yours" loading="lazy"><div><div class="role">Lead Dentist</div><div class="doctor-name">Dr. Disha Chaudhary</div><div class="doctor-meta">Dentally Yours · Muzaffarpur</div></div></div><h3>Dentally Yours</h3><p>Social media support, content publishing, Google Business Profile visibility and Meta Ads.</p><div class="chips"><span>Instagram</span><span>Local visibility</span><span>Meta Ads</span></div>
