@@ -99,15 +99,41 @@ nav{position:sticky;top:0;z-index:20;background:rgba(9,10,12,.86);backdrop-filte
 .mobile-menu-panel a:hover{color:var(--gold2);background:rgba(215,183,122,.06)}
 @media(max-width:800px){nav{gap:12px}.navlinks{display:none}.mobile-menu{display:block}.navcta{margin-left:auto;padding:10px 12px;font-size:9px}}
 @media(max-width:420px){.logo{font-size:14px;letter-spacing:.13em}.navcta{font-size:8px;padding:9px 10px}.mobile-menu summary{padding:8px 9px;font-size:9px}}
+
+/* HERO FEATURE IMAGE — VISUAL BALANCE */
+.hero-intro{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(300px,.88fr);gap:42px;align-items:center}
+.hero-copy{min-width:0}
+.hero-copy h1{font-size:clamp(46px,6.4vw,82px)}
+.hero-feature-image{height:440px;position:relative;overflow:hidden;border:1px solid rgba(215,183,122,.38);border-radius:5px;background:#171a20;box-shadow:0 28px 70px rgba(0,0,0,.32)}
+.hero-feature-image img{width:100%;height:100%;display:block;object-fit:cover;filter:brightness(.76) saturate(.78);transition:transform .8s}
+.hero-feature-image:hover img{transform:scale(1.045)}
+.hero-feature-image:after{content:"";position:absolute;inset:20% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.88))}
+.hero-image-label{position:absolute;z-index:2;left:25px;right:20px;bottom:27px}
+.hero-image-label small{display:block;color:var(--gold2);font-size:9px;letter-spacing:.2em;margin-bottom:10px}
+.hero-image-label b{display:block;color:#fff;font-size:clamp(25px,3vw,39px);line-height:1.12;letter-spacing:-.04em}
+.hero-image-index{position:absolute;z-index:2;top:18px;right:18px;color:#fff;font-size:10px;letter-spacing:.18em;border:1px solid rgba(255,255,255,.45);padding:8px 10px;background:rgba(0,0,0,.2)}
+.hero-intro+.hero-gallery{margin-top:52px}
+@media(max-width:800px){.hero-intro{grid-template-columns:1fr;gap:30px}.hero-feature-image{height:340px;max-width:620px}.hero-copy h1{max-width:720px}}
+@media(max-width:480px){.hero-feature-image{height:260px}.hero-image-label{left:16px;bottom:17px}.hero-image-label b{font-size:25px}.hero-intro+.hero-gallery{margin-top:32px}}
+
 </style>
 </head>
 <body><a class="skip-link" href="#work">Skip to main content</a><div class="container">
 <nav><a class="logo" href="#home">BS <span>STUDIOS</span></a><div class="navlinks"><a href="#services">Services</a><a href="#work">Our Work</a><a href="#approach">Approach</a><a href="#about">About</a><a href="#founder">Founder</a></div><details class="mobile-menu"><summary aria-label="Open navigation menu">MENU <span>＋</span></summary><div class="mobile-menu-panel"><a href="#services">Services</a><a href="#work">Our Work</a><a href="#approach">Approach</a><a href="#about">About</a><a href="#founder">Founder</a><a href="#contact">Contact</a></div></details><a class="navcta" href="#contact">Let’s Talk ↗</a></nav>
 <header class="hero" id="home">
-<div class="pill"><i class="dot"></i> Independent digital growth studio</div>
-<h1>Make your brand<br><span>impossible</span> to ignore.</h1>
-<p>We turn attention into action with thoughtful content, social media management, paid campaigns and local search visibility — built around what your business actually needs.</p>
-<div class="hero-actions"><a class="btn" href="#work">Explore our work ↘</a><a class="btn secondary" href="#contact">Start a conversation</a></div>
+<div class="hero-intro">
+ <div class="hero-copy">
+  <div class="pill"><i class="dot"></i> Independent digital growth studio</div>
+  <h1>Make your brand<br><span>impossible</span> to ignore.</h1>
+  <p>We turn attention into action with thoughtful content, social media management, paid campaigns and local search visibility — built around what your business actually needs.</p>
+  <div class="hero-actions"><a class="btn" href="#work">Explore our work ↘</a><a class="btn secondary" href="#contact">Start a conversation</a></div>
+ </div>
+ <div class="hero-feature-image">
+  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=90" alt="Creative team collaborating on a brand strategy" fetchpriority="high">
+  <div class="hero-image-label"><small>BS STUDIOS / CREATIVE PARTNERS</small><b>Ideas that move<br>business forward.</b></div>
+  <span class="hero-image-index">01 — 04</span>
+ </div>
+</div>
 <div class="hero-gallery" aria-label="Selected client work">
  <div class="hero-shot"><img src="https://content.jdmagicbox.com/v2/comp/muzaffarpur/s5/9999px621.x621.250331060225.j4s5/catalogue/dentally-yours-muzaffarpur-dentists-mk18nzlqkl-250.jpg" alt="Dentally Yours clinic"><span>Healthcare<b>Dentally Yours</b></span></div>
  <div class="hero-shot tall"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLeajlV_vq_mj4cWRnB52wogOEBG7XmsWZqXVsPyv6Te8_b8wUcjf06joek83VcC36pj9MueEyPHJUrmZJh9ihD3JyKIKudAyngJFkKfB6eJ6aU6ElggzrqUp2bUDVupYD3PxdV_nIaT_KYPM=s220-w165-h220-n-k-no" alt="Dr Disha Chaudhary"><span>Dental care<b>Dr. Disha</b></span></div>
