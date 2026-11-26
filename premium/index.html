@@ -22,6 +22,40 @@ nav{height:82px;display:flex;align-items:center;justify-content:space-between;bo
 footer{padding:28px 0 42px;border-top:1px solid rgba(255,255,255,.08);margin-top:70px;display:flex;justify-content:space-between;color:#777b83;font-size:10px;letter-spacing:.12em}
 @media(max-width:800px){.navlinks{display:none}.services{grid-template-columns:1fr 1fr}.workgrid,.about{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.sectiontop{display:block}.hero-foot{gap:20px;flex-wrap:wrap}.contact{display:block;padding:32px}.contact .btn{margin-top:22px}}
 @media(max-width:480px){.container{width:calc(100% - 30px)}.hero{padding:75px 0 60px}.services{grid-template-columns:1fr}.resultgrid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.hero-foot{margin-top:48px}.casevisual{min-height:185px}}
+
+/* PREMIUM VISUAL REFRESH */
+body{background:radial-gradient(ellipse at 82% 8%,rgba(215,183,122,.09),transparent 28%),var(--bg)}
+nav{position:sticky;top:0;z-index:20;background:rgba(9,10,12,.86);backdrop-filter:blur(18px);padding:0 18px;border:1px solid rgba(215,183,122,.12);border-top:0}
+.logo{font-size:18px}.navcta,.btn{transition:transform .25s,box-shadow .25s;background:linear-gradient(110deg,#c6a365,#f1d9a8);box-shadow:0 8px 28px rgba(215,183,122,.12)}.navcta:hover,.btn:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(215,183,122,.24)}
+.hero{padding:94px 0 62px}.hero h1{max-width:800px;text-wrap:balance}.hero p{font-size:17px;line-height:1.85}
+.hero-gallery{height:310px;display:grid;grid-template-columns:1.25fr .8fr .8fr;gap:12px;margin:46px 0 8px}
+.hero-shot{position:relative;overflow:hidden;border:1px solid rgba(215,183,122,.25);border-radius:5px;background:#171a20;min-width:0}
+.hero-shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s;filter:saturate(.82)}
+.hero-shot:hover img{transform:scale(1.06)}
+.hero-shot:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.8))}
+.hero-shot span{position:absolute;z-index:2;bottom:16px;left:17px;color:#f5f4f0;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.hero-shot span b{display:block;color:var(--gold2);font-size:17px;letter-spacing:0}
+.hero-shot.tall{transform:translateY(15px)}
+.hero-foot{margin-top:44px}
+.section{padding:100px 0}
+.sectiontop{margin-bottom:42px}
+.heading{line-height:1.02}
+.service{border-radius:4px;transition:transform .25s,border-color .25s,background .25s}.service:hover{transform:translateY(-6px);border-color:rgba(215,183,122,.48);background:linear-gradient(145deg,#202128,#101216)}
+.case{border-radius:5px;transition:transform .3s,border-color .3s}.case:hover{transform:translateY(-5px);border-color:rgba(215,183,122,.42)}
+.casevisual{min-height:285px}.casevisual.alt,.casevisual.third{min-height:220px}
+.casevisual img{opacity:.86;transition:transform .65s,opacity .3s}.case:hover .casevisual img{transform:scale(1.045);opacity:1}
+.casevisual:after{inset:15% 0 0;background:linear-gradient(transparent 12%,rgba(0,0,0,.88))}
+.visualword{font-size:clamp(30px,4vw,48px)}
+.casebody{padding:28px}
+.casebody>div:first-child img{box-shadow:0 8px 25px rgba(0,0,0,.35)}
+.result{border-radius:3px;padding:16px 12px}.result b{font-size:25px}
+.proof,.aboutbox,.contact{border-radius:5px}
+.step{transition:padding .25s}.step:hover{padding-left:10px}
+.aboutbox{position:relative;overflow:hidden}.aboutbox:after{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(215,183,122,.17);border-radius:50%;right:-65px;bottom:-100px;box-shadow:0 0 0 25px rgba(215,183,122,.025),0 0 0 50px rgba(215,183,122,.02)}
+.contact{box-shadow:0 24px 80px rgba(0,0,0,.22)}
+@media(max-width:800px){.hero-gallery{height:250px;grid-template-columns:1.2fr .8fr}.hero-shot.tall{display:none}.casevisual{min-height:230px}}
+@media(max-width:480px){.hero-gallery{height:195px;gap:7px;margin-top:32px}.hero-shot span{left:10px;bottom:10px;font-size:8px}.hero-shot span b{font-size:13px}.hero{padding-top:68px}.casebody{padding:19px}.casevisual{min-height:195px}}
+
 </style>
 </head>
 <body><div class="container">
@@ -31,6 +65,11 @@ footer{padding:28px 0 42px;border-top:1px solid rgba(255,255,255,.08);margin-top
 <h1>Make your brand<br><span>impossible</span> to ignore.</h1>
 <p>We turn attention into action with thoughtful content, social media management, paid campaigns and local search visibility — built around what your business actually needs.</p>
 <div class="hero-actions"><a class="btn" href="#work">Explore our work ↘</a><a class="btn secondary" href="#contact">Start a conversation</a></div>
+<div class="hero-gallery" aria-label="Selected client work">
+ <div class="hero-shot"><img src="https://content.jdmagicbox.com/v2/comp/muzaffarpur/s5/9999px621.x621.250331060225.j4s5/catalogue/dentally-yours-muzaffarpur-dentists-mk18nzlqkl-250.jpg" alt="Dentally Yours clinic"><span>Healthcare<b>Dentally Yours</b></span></div>
+ <div class="hero-shot tall"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLeajlV_qm_jc4WRnB52wogOEBG7XmsWZqXVsPyv6Te8_b8wUcjf06joek83VcC36pj9MueEyPHJUrmZJh9ihD3JyKIKudAyngJFkKfB6eJ6aU6ElggzrqUp2bUDVupYD3PxdV_nIaT_KYPM=s220-w165-h220-n-k-no" alt="Dr Disha Chaudhary"><span>Dental care<b>Dr. Disha</b></span></div>
+ <div class="hero-shot"><img src="https://image.wedmegood.com/resized/450X/uploads/member/1826719/1662621532_271418975_283040627138306_2454812120154979491_n.jpg?crop=4%2C207%2C1071%2C602" alt="Khushika Secrets bridal makeup"><span>Beauty & bridal<b>Khushika Secrets</b></span></div>
+</div>
 <div class="hero-foot"><div>What we do<b>Content · Ads · Growth</b></div><div>Who we help<b>Ambitious local brands</b></div><div>Based in<b>India · Working everywhere</b></div></div>
 </header>
 <section class="section" id="services"><div class="sectiontop"><div><div class="kicker">01 / Capabilities</div><h2 class="heading">The right work.<br>The right audience.</h2></div><p class="sub">From the first impression to the next enquiry, we bring the moving parts of your digital presence together.</p></div>
